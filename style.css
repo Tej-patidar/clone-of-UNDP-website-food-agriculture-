@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+  
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding:0 1% ;
+    /* flex-direction: column; */
+}
+
+.leftnav{
+    display: flex;
+    /* background-color: blue; */
+    text-align: left;
+}
+
+.leftnav p{
+    font-weight: 800;
+    margin: 3% ;
+}
+
+.leftnav span{
+    font-size: 2vmax;
+}
+.leftnav img{
+    width: 7%;
+}
+
+.rightnav{
+    display: flex;
+    /* background-color: pink; */
+    width: 20%;
+    justify-content: space-around;
+    font-size: 2vmax;
+    text-align: center;
+
+}
+
+.rightnav i{
+    margin: 12% 0;
+}
+
+/* navv  over............... */
+
+
+
+
+.container{
+    width: 100%;
+    height: 50vmax;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.container video{
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    z-index: 1;
+
+}
+
+.content{
+    color: white;
+    width: 100%;
+    height: 50vmax;
+    position: absolute;
+    top: 18.5%;
+    z-index: 2;
+    
+    
+}
+.content h1{
+    animation: move 1s  1 ease ;
+    font-size: 4vmax;
+    width: 50%;
+    margin: 5%;
+}
+
+.content p{
+    font-size: 2vmax;
+    width: 60%;
+    margin: 5%;
+ animation: move 1s .5s 1 ease ;
+
+}
+
+.content button{
+    padding: 1vmax 2.5vmax;
+    font-size: 2vmax;
+    border: none;
+    border-radius: 10px;
+    transition: .5s;
+    margin: 0 5%;
+ animation: move 1s 1s 1 ease ;
+
+
+}
+
+.content button:hover{
+    background-color: black;
+    color: white;
+}
+
+.container1{
+    width: 100%;
+    height: 10vmax;
+    font-size: 3.5vmax;
+    text-align: center;
+ animation: move 1s 3s 1 ease ;
+
+}
+
+@keyframes move {
+    from{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.container2{
+    width: 100%;
+    height: 40vmax;
+    font-size: 2vmax;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.container2 h1{
+ width: 100%;
+ background-color:white;
+ opacity: 0;
+ transform: translateY(-0px);
+ transition: .5s;
+}
+.container2 p{
+    transform: translatey(-50px);
+}
+
+.box-1{
+    width: 30%;
+    height: 100%;
+ animation: move 1s 4s 1 ease ;
+
+
+
+}
+.box-2{
+    width: 30%;
+    height: 100%;
+ animation: move 1s 4.5s 1 ease ;
+
+}
+.box-3{
+    width: 30%;
+    height: 100%;
+ animation: move 1s 5s 1 ease ;
+
+}
+
+.box p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container2 i{
+    font-size: 3vmax;
+}
+
+.container2 img{
+    width: 100%;
+    height: 80%;
+}
+
+.box:hover h1{
+    opacity: 1;
+    cursor: pointer;
+ transform: translateY(-50px);
+
+}
+
+
+.container3{
+    width: 100%;
+    /* height: 15vmax; */
+    display: flex;
+    justify-content: center;
+    
+}
+.left-container-3{
+    width: 30%;
+    height: 100%;
+    /* background-color: blueviolet; */
+   text-align: center;
+   font-size: 3vmax;
+    
+}
+
+.right-container-3{
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    height: 40vh;
+    font-size: 1.7vmax;
+    background-color:rgba(170, 160, 160, 0.318);
+}
+
+.right-container-3 p{
+    margin: 1.5% 0;
+}
+
+.right-container-3 button{
+    padding: .7vmax 2vmax;
+}
+.right-container-3-img{
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.right-container-3-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.right-container-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 50px;
+
+}
+
+.right-container-3:hover .right-container-3-img{
+    transform: translateX(0%);
+    
+}
+.right-container-3:hover .right-container-text{
+    opacity: 0;
+}
+
+.container4{
+    width: 100%;
+    height: 30vmax;
+    /* background-color: aqua; */
+    margin-top: 5%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.flex{
+    overflow: hidden;
+    width: 30%;
+    height: 100%;
+    /* background-color: beige; */
+    background-color:rgba(170, 160, 160, 0.318);
+    position: relative;
+
+
+}
+
+.flex p{
+    margin: 13% 4%;
+}
+
+.flex button{
+    padding: 1vmax 2vmax;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    transition: .5s;
+}
+.flex button:hover{
+    background-color: black;
+    color: white;
+}
+
+.fleximg{
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.fleximg img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.flex-text{
+    position: absolute;
+    top: 0;
+}
+.flex:hover .fleximg {
+    transform: translateX(0px);
+    
+}
+
+.flex:hover .flex-text{
+    opacity: 0;
+}
+
+.container5{
+    width: 100%;
+    height: 30vmax;
+    /* position: relative; */
+    display: flex;
+    text-align: center;
+    justify-content:space-around;
+    margin-top: 5%;
+    
+}
+.flex4{
+    background-color: white;
+}
+
+.flex4  h1{
+    font-size: 4vmax ;
+    margin-top: 20%;
+}
+
+.container6{
+    width: 100%;
+    height: 30vmax;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 5%;
+
+}
+
+
+.container7{
+    width: 100%;
+    height: 25vmax;
+   line-height: 2.5vmax;
+
+}
+
+.text-7{
+    margin-top: 2%;
+    margin-left: 35%;
+}
+input{
+    height: 2.5vmax;
+    width: 14vmax;
+    margin: .5% 0;
+}
+
+footer{
+    width: 100%;
+    height: 50vmax;
+    background-color: rgba(0, 0, 255, 0.726);
+    color: white;
+    padding: 1%;
+}
+
+.footer img{
+    width: 30%;
+}
+
+.logo{
+    display: flex;
+    text-align:bottom;
+    justify-content: flex-start;
+    font-size: 2.5vmax;
+    color: white;
+}
+hr{
+    margin: 3% 0;
+}
+
+.mainline{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+.line{
+width: 20%;
+line-height: 3vmax;
+letter-spacing: .1vmax;
+}
+
+.line i{
+    font-size: 2.2vmax;
+    margin: 2%;
+}
+
+.line-4{
+    width: 30%;
+}
